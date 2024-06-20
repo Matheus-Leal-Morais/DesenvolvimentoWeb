@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: #111;
+    padding: 25px 0; /* Aumentar o padding para expandir o header */
+    font-size: 16px; /* Aumentar o tamanho da fonte */
+}
+
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    word-spacing: 1px;
+    white-space: nowrap;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.actions a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.actions img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Estilos gerais */
+.nav-links,
+.actions {
+    font-family: 'Alternate Gothic Extra Cond ATF Black', sans-serif;
+    font-size: 12px;
+}
+
+.actions a {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Efeito hover para os links no header */
+header .nav-links a:hover,
+header .actions a:hover {
+    color: #f00;
+}
+
+/* Estilos para o título */
+.titulo {
+    font-weight: bold;
+    text-align: center; /* Centralizei o texto */
+    margin-top: 30px; /* Ajustei o espaçamento superior */
+}
+
+.linha_sup, .linha_encomenda, .linha_mid {
+    width: 90%; /* Reduzi a largura */
+    margin: 20px auto; /* Centralizei as linhas */
+    border: 1px solid rgb(83, 23, 23);
+}
+
+
+/* Estilos para a seção de filtro */
+.Filtrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5%;
+}
+
+.filtrar-tabela {
+    height: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+.filtro {
+    border: 2px dotted white;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+}
+
+/* Estilos para a tabela */
+.tabela {
+    border-collapse: collapse;
+    border: 2px solid white;
+    text-align: center;
+    margin: 30px auto;
+    width: 80%;
+    color: white;
+}
+
+thead {
+    background-color: rgba(138, 0, 0, 0.774);
+}
+
+th, td {
+    border: 1.5px solid rgba(128, 128, 128, 0.486);
+    padding: 4px 20px;
+    color: white;
+}
+
+.quant-invalida {
+    color: red;
+}
+
+.unit-invalida {
+    background-color: red;
+}
+
+/* Estilos para os itens do formulário */
+.item {
+    margin-bottom: 15px; /* Ajustei o espaçamento inferior */
+}
+
+.campo {
+    height: 40px; /* Aumentei a altura */
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 0 10px; /* Ajustei o padding */
+}
+
+.tabela {
+    border-collapse: collapse;
+    border: 2px solid white;
+    text-align: center;
+    margin: 30px auto;
+    width: 95%; /* Ajustei a largura */
+}
+
+th, td {
+    padding: 10px; /* Aumentei o padding */
+}
+
+
+.label {
+    font-weight: bold;
+    color: white;
+}
+
+.bot-search, .bot-add {
+    display: inline-block;
+    margin: 1.5% 2.5%;
+    height: 40px;
+    width: 150px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+.bot-search:hover, .bot-add:hover {
+    background-color: darkred;
+}
+
+#mensagens-erro {
+    color: red;
+    
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.invisivel {
+    display: none;
+}
+
+.graph {
+    width: 90%;
+    max-width: 900px;
+    height: 500px;
+    margin: 30px auto;
+}

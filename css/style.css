@@ -1,0 +1,327 @@
+/* Estilos gerais do body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #fff;
+    margin: 0;
+}
+
+/* Estilos do container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #111;
+    padding: 15px 0;
+    font-size: 7px;
+}
+.nav-links,
+.actions {
+    font-family: 'Alternate Gothic Extra Cond ATF Black', sans-serif;
+    font-size: 12px; /* Defina o tamanho da fonte */
+}
+
+/* Estilos para ações específicas */
+.actions a {
+    font-family: inherit; 
+    font-size: inherit; 
+}
+
+
+header .nav-links a:hover,
+header .actions a:hover {
+    color: #f00; 
+}
+
+
+nav {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+/* Estilos para a logo */
+.logo img {
+    max-width: 100px; /* Defina um tamanho máximo para a imagem */
+    height: 25px; 
+    vertical-align: middle; 
+}
+
+/* Estilos para a lista de navegação */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+}
+
+.nav-links li {
+    margin-left: 20px; 
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    word-spacing: 1px; 
+    white-space: nowrap; /* Impede quebra de linha nas palavras */
+}
+
+/* Estilos para as ações */
+.actions {
+    display: flex; /* itens na mesma linha */
+    align-items: center; 
+    gap: 20px; 
+}
+
+.actions a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0;
+}
+
+.actions img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+/* Estilos para os detalhes do filme */
+.movie-details {
+    display: flex;
+    gap: 30px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.movie-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.rating {
+    display: inline-block;
+    background-color: #f00;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.movie-info h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.movie-info p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #f00;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #c00;
+}
+
+.movie-poster {
+    position: relative;
+    flex: 1;
+}
+
+.movie-poster img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+
+/* Estilos para os horários */
+.showtimes {
+    padding: 40px 0;
+    justify-content: center;
+}
+
+.showtimes-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.showtime-item {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1 0 25%;
+    min-width: 200px;
+}
+
+
+.showtime-item .date {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.showtime-item .details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.showtime-item .format,
+.showtime-item .version {
+    font-size: 16px;
+}
+
+.showtimes-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.showtimes-controls button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.showtimes-controls img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #111;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .movie-details {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .movie-info {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actions a {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .showtime-item {
+        flex: 1 0 100%;
+    }
+
+    .showtimes-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .showtimes-controls button {
+        margin: 10px 0;
+    }
+}
+.movies-section {
+    position: relative; 
+}
+
+.nav-buttons {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+}
+
+
+.movies-list {
+    display: flex;
+    gap: 5px; /* Adiciona espaço no final para evitar que os filmes fiquem muito próximos à borda */
+}
+
+.movie {
+    flex: 1 0 150px; /* largura fixa para cada filme */
+    margin: 10px; /* espaçamento entre os filmes */
+    background-color: #303030;
+    border: 1px solid #282727;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie img {
+    width: 100%; /* imagem preencha a largura  */
+    height: 200px; /* Define a altura da imagem */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    border-radius: 10px 10px 0 0; 
+}
+
+.movie-info2 {
+    padding: 20px; /* Diminui o espaço interno das informações do filme */
+}
+
+.movie-info2 h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.movie-info2 p {
+    font-size: 16px;
+    color: white;
+}
+
+
+
+.nav-buttons {
+    display: flex;
+}
+
+.nav-buttons button {
+    background-color: #555;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
